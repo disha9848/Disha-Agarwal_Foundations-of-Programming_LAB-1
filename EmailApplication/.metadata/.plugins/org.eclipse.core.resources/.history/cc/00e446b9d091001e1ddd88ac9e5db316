@@ -1,0 +1,17 @@
+package com.greatlearning.email_app;
+
+public class CredentialsServiceImpl implements ICredentialsService{
+	public String generateEmailAddress(String firstName, String lastName, int departmentCode) {
+		return null;
+		
+	}
+	
+	public String generatePassword() {
+		return null;
+		
+	}
+	
+	public void displayCredentials() {
+		
+	}
+}

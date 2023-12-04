@@ -1,0 +1,11 @@
+package com.greatlearning.email_app;
+
+public class Employee {
+	String firstName;
+	String lastName;
+	int departmentCode;
+	Employee(String firstName,String lastName){
+		this.firstName=firstName;
+		this.lastName=lastName;
+	}
+}

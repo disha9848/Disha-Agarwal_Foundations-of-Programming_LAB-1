@@ -1,0 +1,19 @@
+package com.greatlearning.email_app;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) {
+//		System.out.println("Please enter the department from the following"+ '\n' +
+//				"1. Technical"+ '\n' +
+//				"2. Admin"+ '\n' +
+//				"3. Human Resource"+ '\n' +
+//				"4. Legal");
+//		Scanner in= new Scanner(System.in);
+//		int departmentCode=in.nextInt();
+//		
+		Employee emp=new Employee("Disha", "Agarwal");
+		CredentialsServiceImpl empService= new CredentialsServiceImpl();
+		String emailAddress= empService.generateEmailAddress(emp.firstName, emp.lastName, emp.departmentCode);
+		System.out.println(emailAddress);
+	}
+}

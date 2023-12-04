@@ -1,0 +1,39 @@
+package com.greatlearning.email_app;
+
+public class CredentialsServiceImpl implements ICredentialsService{
+	public String generateEmailAddress(String firstName, String lastName, int departmentCode) {
+		String departmentType;
+		switch(departmentCode){
+		case 1:
+			departmentType="tech";break;
+		case 2:
+			departmentType="admin";break;
+		case 3:
+			departmentType="hr";break;
+		case 4:
+			departmentType="legal";break;
+		default:
+			departmentType="";break;
+		}
+		StringBuilder emailAddress = new StringBuilder();
+		emailAddress.append(firstName.toLowerCase());
+		emailAddress.append(".");
+		emailAddress.append(lastName.toLowerCase());
+		emailAddress.append("@");
+		emailAddress.append(departmentType);
+		emailAddress.append(".gl.com");
+		
+		return emailAddress.toString();
+		
+	}
+	
+	public String generatePassword() {
+		return null;
+		
+	}
+	
+	public void displayCredentials(String emailAddress,String password) {
+		System.out.println("Email ---> "+ emailAddress);
+		System.out.println("Password ---> "+ password);
+	}
+}

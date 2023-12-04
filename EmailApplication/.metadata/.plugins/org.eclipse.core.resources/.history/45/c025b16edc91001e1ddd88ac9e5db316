@@ -1,0 +1,20 @@
+package com.greatlearning.email_app;
+
+import java.util.Scanner;
+
+public class EmailApplication {
+	void init(){
+		Scanner in= new Scanner(System.in);
+		System.out.println("Please enter your First name");
+		String FirstName= in.nextLine();
+		System.out.println("Please enter your Last name");
+		String LastName= in.nextLine();
+		System.out.println("Please enter the department from the following"+ '\n' +
+				"1. Technical"+ '\n' +
+				"2. Admin"+ '\n' +
+				"3. Human Resource"+ '\n' +
+				"4. Legal");
+		int departmentCode=in.nextInt();
+	}
+	
+}

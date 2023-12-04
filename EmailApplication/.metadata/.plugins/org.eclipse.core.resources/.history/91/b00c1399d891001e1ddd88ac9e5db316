@@ -1,0 +1,13 @@
+package com.greatlearning.email_app;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) {
+		//Employee emp=new Employee("Disha", "Agarwal");
+		CredentialsServiceImpl empService= new CredentialsServiceImpl();
+		//String emailAddress= empService.generateEmailAddress(emp.firstName, emp.lastName, emp.departmentCode);
+		//System.out.println(emailAddress);
+		
+		System.out.println(empService.generatePassword());
+	}
+}

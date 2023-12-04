@@ -1,0 +1,14 @@
+package com.greatlearning.email_app;
+
+public class Main {
+	public static void main(String args[]) {
+		EmailApplication emailApplicationObj = new EmailApplication();
+		emailApplicationObj.init();
+		CredentialsServiceImpl CredentialsServiceImplObj= new CredentialsServiceImpl();
+		Employee emp=new Employee("Disha", "Agarwal");
+		String emailAddress= CredentialsServiceImplObj.generateEmailAddress(emp.firstName, emp.lastName, emp.departmentCode);
+		String Password = CredentialsServiceImplObj.generatePassword();
+		System.out.println("Dear "+ emp.firstName +" your generated credentials are as follows");
+		CredentialsServiceImplObj.displayCredentials(emailAddress, Password);
+	}
+}

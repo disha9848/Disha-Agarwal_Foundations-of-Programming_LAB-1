@@ -1,0 +1,9 @@
+package com.greatlearning.email_app;
+
+public class Main {
+	public static void main(String args[]) {
+		CredentialsServiceImpl emp= new CredentialsServiceImpl();
+		String emailAddress= emp.generateEmailAddress("Disha", "Agarwal", 3);
+		
+	}
+}

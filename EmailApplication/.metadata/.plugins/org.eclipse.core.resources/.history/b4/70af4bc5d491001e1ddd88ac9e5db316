@@ -1,0 +1,20 @@
+package com.greatlearning.email_app;
+
+import java.util.Scanner;
+
+public class Employee {
+	String firstName;
+	String lastName;
+	int departmentCode;
+	Employee(String firstName,String lastName){
+		this.firstName=firstName;
+		this.lastName=lastName;
+		System.out.println("Please enter the department from the following"+ '\n' +
+				"1. Technical"+ '\n' +
+				"2. Admin"+ '\n' +
+				"3. Human Resource"+ '\n' +
+				"4. Legal");
+		Scanner in= new Scanner(System.in);
+		departmentCode=in.nextInt();
+	}
+}
